@@ -12,9 +12,9 @@
     <OutputFileName>$(MSBuildProjectName)</OutputFileName>
     <OutputFileExtension>.elf</OutputFileExtension>
     <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
-    <AssemblyName>PWM</AssemblyName>
-    <Name>PWM</Name>
-    <RootNamespace>PWM</RootNamespace>
+    <AssemblyName>StepMotor</AssemblyName>
+    <Name>StepMotor</Name>
+    <RootNamespace>StepMotor</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
@@ -122,9 +122,18 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="PWM_2.c">
+    <Compile Include="StepMotor_4.c">
       <SubType>compile</SubType>
     </Compile>
+    <None Include="StepMotor_3.c">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="StepMotor_1.c">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="StepMotor_2.c">
+      <SubType>compile</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
 </Project>
